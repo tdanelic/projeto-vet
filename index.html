@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;500;800&display=swap"
+        rel="stylesheet">
+    <title>DevGamer</title>
+</head>
+
+<body>
+    <div>
+        <img src="Clinica Veterinária.png" alt="foto do dog">
+        <h1>Bem-vindo a nossa Clínica Veterinária!</h1>
+
+
+        <p>Sabemos o quão importante são os nossos companheiros peludos e estamos aqui para garantir que eles recebam o
+            melhor atendimento possível. Nossa equipe é composta por veterinários altamente competentes, enfermeiros
+            dedicados e funcionários apaixonados por animais. Oferecemos uma ampla gama de serviços veterinários para
+            atender às necessidades individuais de cada animal. Desde consultas de rotina e vacinações até cirurgias
+            complexas e cuidados de emergência, estamos preparados para lidar com qualquer situação que possa surgir.
+            Utilizamos equipamentos modernos e técnicas aprimoradas para garantir diagnósticos precisos e tratamentos
+            eficazes.</p>
+        <p>Além disso, valorizamos a comunicação aberta e transparente com os proprietários. Estamos aqui para responder
+            a todas as suas perguntas e garantir que você tenha todas as informações necessárias para tomar as melhores
+            decisões sobre a saúde do seu animal de estimação. Se você está em busca de uma clínica veterinária que
+            priorize o cuidado com amor, atenção individualizada e o bem-estar do seu animal de estimação, você veio ao
+            lugar certo. Deixe-nos cuidar do seu companheiro com todo o carinho e dedicação que ele merece. Estamos
+            ansiosos para conhecer e cuidar do seu amiguinho!</p>
+
+        <button onclick="abrir()">Entrar em Contato</button>
+    </div>
+
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+        <input type="text" name="name" required placeholder="Nome">
+        <input type="email" name="email" required placeholder="Email">
+        <textarea type="text" name="duvida" placeholder="Sua dúvida aqui"></textarea>
+        <button type="submit">ENVIAR</button>
+        <button onclick="fechar()" type="button" class="voltar">VOLTAR</button>
+    </form>
+
+
+
+</body>
+<script>
+    function abrir() {
+        document.querySelector("form").style.opacity = 1
+        document.querySelector("div").style.opacity = 0.3
+    }
+
+    function fechar() {
+        document.querySelector("form").style.opacity = 0
+        document.querySelector("div").style.opacity = 1
+    }
+</script>
+
+</html>
